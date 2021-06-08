@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="90px"
+    android:orientation="vertical"
+    android:background="#e6faf6">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:src="@mipmap/me_scan"
+            android:scaleType="center"/>
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:src="@mipmap/me_message"
+            android:scaleType="center"/>
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:src="@mipmap/me_set"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+        
+        <com.vmeshow.minepage.RoundImageView
+            android:id="@+id/user_icon"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginStart="45px"
+            android:src="@mipmap/ic_launcher"
+            app:type="circle"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_icon"
+            android:layout_marginStart="32px"
+            android:layout_marginTop="20px"
+            android:textSize="22sp"
+            android:text="我是用户"
+            android:textColor="@color/black"
+            android:drawableEnd="@mipmap/me_grade_first"/>
+
+        <TextView
+            android:id="@+id/user_yumi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:paddingStart="20px"
+            android:paddingEnd="20px"
+            android:layout_below="@id/user_name"
+            android:layout_alignStart="@id/user_name"
+            android:gravity="center"
+            android:text="玉米粒：0"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_corner_1"
+            android:drawableStart="@mipmap/me_dou"
+            android:drawablePadding="5px"/>
+
+        <TextView
+            android:id="@+id/user_hongqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:paddingStart="20px"
+            android:paddingEnd="20px"
+            android:layout_toEndOf="@id/user_yumi"
+            android:layout_alignTop="@id/user_yumi"
+            android:text="立旗：5"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_corner_2"
+            android:drawableStart="@mipmap/me_flag"
+            android:drawableEnd="@mipmap/me_next_white"
+            android:drawablePadding="5px"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135px"
+        android:layout_marginTop="90px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="356px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#03041b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textSize="13sp"
+                android:textColor="#80828a"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="80px"
+            android:background="#80828a"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="356px"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5px"
+            android:layout_marginEnd="5px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="130"
+                android:textSize="18sp"
+                android:textColor="#03041b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textSize="13sp"
+                android:textColor="#80828a"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="80px"
+            android:background="#80828a"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="356px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="5.25元"
+                android:textColor="#3fcfcb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="钱包"
+                android:textSize="13sp"
+                android:textColor="#80828a"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="365px"
+        android:layout_marginTop="75px"
+        android:layout_marginStart="45px"
+        android:layout_marginEnd="45px">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="315px"
+            android:background="@drawable/shape_corner">
+            <TextView
+                android:id="@+id/user_data_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90px"
+                android:layout_marginStart="50px"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:text="累计打卡"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_data_1"
+                android:layout_alignStart="@id/user_data_1"
+                android:layout_marginTop="20px"
+                android:text="1 天"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_data_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90px"
+                android:layout_marginStart="280px"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:text="当前体重"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_data_2"
+                android:layout_alignStart="@id/user_data_2"
+                android:layout_marginTop="20px"
+                android:text="50.0千克"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_data_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90px"
+                android:layout_marginStart="510px"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:text="周累计消耗"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_data_3"
+                android:layout_alignStart="@id/user_data_3"
+                android:layout_marginTop="20px"
+                android:text="150.0千卡"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mg_bg_person_man_two"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="336px"
+            android:layout_height="110px"
+            android:layout_marginStart="60px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="查看打卡数据"
+            android:textSize="12sp"
+            android:textColor="#3fcfcb"
+            android:drawablePadding="5px"
+            android:drawableEnd="@mipmap/me_next_green"
+            android:background="@drawable/shape_corner_3"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60px"/>
+</LinearLayout>

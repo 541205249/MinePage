@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270px"
+    android:layout_height="260px"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="145px"
+        android:layout_height="105px"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="16px"/>
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#353546"
+        android:text="我是标题啊"
+        android:textSize="14sp"/>
+</LinearLayout>
